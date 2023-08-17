@@ -27,7 +27,6 @@ class jiya extends Component {
 
     // For this example, we'll check if the username and password are valid.
     if (username === 'name' && password === '1111') {
-      // Successful login
       Alert.alert('Login Successful', 'Welcome back!');
       navigation.navigate('about');
     } else {
