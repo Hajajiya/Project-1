@@ -22,10 +22,6 @@ class jiya extends Component {
   handleLogin = () => {
     const {username, password} = this.state;
     const {navigation} = this.props;
-    // You would typically implement your authentication logic here,
-    // such as making an API request to a backend server.
-
-    // For this example, we'll check if the username and password are valid.
     if (username === 'name' && password === '1111') {
       Alert.alert('Login Successful', 'Welcome back!');
       navigation.navigate('about');
