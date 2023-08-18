@@ -30,7 +30,6 @@ class jiya extends Component {
       Alert.alert('Login Successful', 'Welcome back!');
       navigation.navigate('about');
     } else {
-      // Failed login
       Alert.alert('Login Failed', 'Invalid username or password.');
     }
   };
