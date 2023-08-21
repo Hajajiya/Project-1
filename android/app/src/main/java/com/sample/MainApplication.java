@@ -3,6 +3,7 @@ package com.sample;
 import android.app.Application;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.microsoft.codepush.react.CodePush; 
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
@@ -27,7 +28,8 @@ public class MainApplication extends Application implements ReactApplication {
           // packages.add(new MyReactNativePackage());
           return packages;
         }
-
+      @Override protected String getJSBundleFile() { return 
+        CodePush.getJSBundleFile(); } 
         @Override
         protected String getJSMainModuleName() {
           return "index";
