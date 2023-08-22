@@ -274,7 +274,7 @@ export class Myapp extends Component {
     return (
       <View
         style={{
-          backgroundColor: 'red',
+          backgroundColor: 'blue',
           height: 60,
           width: 70,
           marginTop: 10,
@@ -289,47 +289,47 @@ export class Myapp extends Component {
   }
   render() {
     return (
-      // <ImageBackground
-      //   source={{
-      //     uri: 'https://e0.pxfuel.com/wallpapers/61/426/desktop-wallpaper-splashes-of-color-miscellaneous-cool-fluorescent-paint-color.jpg',
-      //   }}
-      //   style={styles.imageBackground}>
-      <View style={{alignItems: 'center'}}>
-        <FlatList
-          data={this.state.jiya}
-          renderItem={this.renderItem}
-          numColumns={3}
-          showsVerticalScrollIndicator={false}
-          keyExtractor={item => item.id}
-        />
-        <RBSheet
-          ref={ref => {
-            this.RBSheet = ref;
-          }}
-          height="400"
-          duration={250}
-          animationType={'fade'}
-          closeOnDragDown
-          dragFromTopOnly
-          // customStyles={{
-          //   container: {
-          //     borderTopRightRadius: 15,
-          //     borderTopLeftRadius: 15,
-          //     backgroundColor: 'white',
-          //   },
-          //   wrapper: {
-          //     // backgroundColor: 'transparent',
-          //   },
-          //   draggableIcon: {
-          //     backgroundColor: '#fff',
-          //   },
-          // }}
-        >
-          {this._renderSheetContent()}
-        </RBSheet>
-        {/* <Text style={{fontSize: 16, color: 'white'}}>{data.brand}</Text> */}
-      </View>
-      // </ImageBackground>
+      <ImageBackground
+        source={{
+          uri: 'https://e0.pxfuel.com/wallpapers/61/426/desktop-wallpaper-splashes-of-color-miscellaneous-cool-fluorescent-paint-color.jpg',
+        }}
+        style={styles.imageBackground}>
+        <View style={{alignItems: 'center'}}>
+          <FlatList
+            data={this.state.jiya}
+            renderItem={this.renderItem}
+            numColumns={3}
+            showsVerticalScrollIndicator={false}
+            keyExtractor={item => item.id}
+          />
+          <RBSheet
+            ref={ref => {
+              this.RBSheet = ref;
+            }}
+            height="400"
+            duration={250}
+            animationType={'fade'}
+            closeOnDragDown
+            dragFromTopOnly
+            // customStyles={{
+            //   container: {
+            //     borderTopRightRadius: 15,
+            //     borderTopLeftRadius: 15,
+            //     backgroundColor: 'white',
+            //   },
+            //   wrapper: {
+            //     // backgroundColor: 'transparent',
+            //   },
+            //   draggableIcon: {
+            //     backgroundColor: '#fff',
+            //   },
+            // }}
+          >
+            {this._renderSheetContent()}
+          </RBSheet>
+          {/* <Text style={{fontSize: 16, color: 'white'}}>{data.brand}</Text> */}
+        </View>
+      </ImageBackground>
     );
   }
 }
