@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import CodePush from 'react-native-code-push';
 import {
   View,
   TextInput,
@@ -100,4 +101,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default jiya;
+export default CodePush(jiya);
