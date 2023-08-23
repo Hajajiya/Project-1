@@ -279,10 +279,6 @@ export class Myapp extends Component {
           width: 70,
           marginTop: 10,
         }}>
-        {/* {this.state.jiya.forEach(e => {
-          console.log('kjdlkjsadk', e.brand);
-          return <Text style={{color: 'white'}}>{'jiya'}</Text>;
-        })} */}
         <Text>{'jiya'}</Text>
       </View>
     );
