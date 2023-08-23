@@ -9,8 +9,7 @@ import AboutScreen from './jiya';
 import {NavigationContainer} from '@react-navigation/native';
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import CodePush from 'react-native-code-push';
-
+import codePush from 'react-native-code-push';
 const Stack = createNativeStackNavigator();
 
 const App = () => {
@@ -33,6 +32,6 @@ const App = () => {
   );
 };
 
-export default CodePush(App);
+export default codePush(App);
 
 AppRegistry.registerComponent(appName, () => App);
