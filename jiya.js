@@ -274,7 +274,7 @@ export class Myapp extends Component {
     return (
       <View
         style={{
-          backgroundColor: 'black',
+          backgroundColor: 'red',
           height: 60,
           width: 70,
           marginTop: 10,
