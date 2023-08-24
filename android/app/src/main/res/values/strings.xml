@@ -2,5 +2,5 @@
     <string name="app_name">Sample</string>
     <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>
 <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
-    <string moduleConfig="true" name="CodePushDeploymentKey">84b70644-534e-48e3-98a4-113bc7db241f</string> 
+    <string moduleConfig="true" name="CodePushDeploymentKey">V1wzulh9gmtqO61W7iwYEmzIZvtrRe__Aq-U8</string> 
 </resources>

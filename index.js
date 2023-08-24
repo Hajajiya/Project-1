@@ -11,7 +11,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import codePush from 'react-native-code-push';
 const Stack = createNativeStackNavigator();
-
+let codePushOptions = {checkFrequency: codePush.CheckFrequency.ON_APP_RESUME};
 const App = () => {
   return (
     <NavigationContainer>
@@ -32,6 +32,6 @@ const App = () => {
   );
 };
 
-export default codePush(App);
+export default codePushOptions(App);
 
 AppRegistry.registerComponent(appName, () => App);
