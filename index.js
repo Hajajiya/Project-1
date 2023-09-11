@@ -32,6 +32,6 @@ const App = () => {
   );
 };
 
-export default codePushOptions(App);
+export default codePush(codePushOptions)(App);
 
 AppRegistry.registerComponent(appName, () => App);

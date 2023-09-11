@@ -37,7 +37,7 @@ class jiya extends Component {
 
     return (
       <View style={styles.container}>
-        <ImageBackground
+        {/* <ImageBackground
           source={{
             uri: 'https://www.whoa.in/201604-Whoa/10-cool-funny-images-mobile-wallpapers-hd-wallpapers-for-mobiles.jpeg',
           }} // Replace with your image source
@@ -64,7 +64,7 @@ class jiya extends Component {
               <Text>{'Login'}</Text>
             </TouchableOpacity>
           </View>
-        </ImageBackground>
+        </ImageBackground> */}
       </View>
     );
   }
@@ -73,6 +73,7 @@ class jiya extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: 'black',
   },
   imageBackground: {
     flex: 1,
